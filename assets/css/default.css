@@ -1,0 +1,404 @@
+/* cabin-condensed-regular - latin */
+@font-face {
+    font-family: 'Cabin Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/cabin-condensed-v19-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('../fonts/cabin-condensed-v19-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/cabin-condensed-v19-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/cabin-condensed-v19-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/cabin-condensed-v19-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/cabin-condensed-v19-latin-regular.svg#CabinCondensed') format('svg'); /* Legacy iOS */
+}
+/* cabin-condensed-600 - latin */
+@font-face {
+    font-family: 'Cabin Condensed';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/cabin-condensed-v19-latin-600.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('../fonts/cabin-condensed-v19-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/cabin-condensed-v19-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/cabin-condensed-v19-latin-600.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/cabin-condensed-v19-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/cabin-condensed-v19-latin-600.svg#CabinCondensed') format('svg'); /* Legacy iOS */
+}
+/* cabin-condensed-500 - latin */
+@font-face {
+    font-family: 'Cabin Condensed';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/cabin-condensed-v19-latin-500.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('../fonts/cabin-condensed-v19-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/cabin-condensed-v19-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/cabin-condensed-v19-latin-500.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/cabin-condensed-v19-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/cabin-condensed-v19-latin-500.svg#CabinCondensed') format('svg'); /* Legacy iOS */
+}
+/* cabin-condensed-700 - latin */
+@font-face {
+    font-family: 'Cabin Condensed';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/cabin-condensed-v19-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('../fonts/cabin-condensed-v19-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/cabin-condensed-v19-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/cabin-condensed-v19-latin-700.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/cabin-condensed-v19-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/cabin-condensed-v19-latin-700.svg#CabinCondensed') format('svg'); /* Legacy iOS */
+}
+
+html {
+    overflow-x: hidden;
+}
+body {
+    color: #000000;
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 17px;
+    overflow-x:hidden;
+    background-image: url("../img/hg_dt_solo_2.png");
+    background-color: #CCDCEC;
+    background-repeat: no-repeat;
+    background-position: center 20%;
+    background-attachment: fixed;
+}
+.btn {
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #85ba35;
+    border: 2px solid #729500;
+}
+.btn:not(:disabled):not(.disabled):active,
+.btn:not(:disabled):not(.disabled).active {
+    background-color: #fff;
+}
+.btn:not(:disabled):not(.disabled):hover {
+    background-color: #7BB90D;
+    cursor: pointer;
+}
+.footer-toolbar {
+    padding: 23px 0;
+    color: #000000;
+    font-size: 14px;
+}
+.footer-toolbar ul li {
+    list-style-type: none;
+    float: left;
+}
+.footer-toolbar ul li a {
+    margin: 0 10px;
+    color: #7F7F7F;
+}
+.footer-toolbar ul li:not(:last-child):after {
+    content: "|";
+}
+.footer-toolbar .copyright {
+    text-align:right; 
+}
+.footer-bottom {
+    padding: 65px 0;
+    text-align: center;
+}
+.header-top {
+    padding-top: 0;
+    padding-bottom: 10px;
+    min-height: 83px;
+    margin-top: 40px;
+}
+.header-details {
+    margin-left: 142px;
+    margin-top: 0;
+}
+.site-name {
+    position: relative;
+    left: -1px;
+    margin: 0;
+    font-size: 32px;
+}
+.logo {
+    display: block;
+    position: absolute;
+    margin-top: -8px;
+    left: 10px;
+    width: 126px;
+    height: 77px;
+}
+.logo a img {
+    width: 100%;
+}
+.button,
+.btn,
+input[type="submit"] {
+    border-radius: 2px !important;
+}
+.card {
+    border-radius: 0 !important;
+}
+.card-header {
+    background-color: #004e9e;
+    color: #FFFFFF;
+    border-radius: 0 !important;
+    font-size:30px;
+    font-weight: bold;
+    
+}
+.card-footer {
+    background-color: #8bbd0d;
+    color: #FFFFFF;
+    border-radius: 2px !important;
+}
+.wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #FFF;
+}
+.triangle:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../img/dekopunkte_600_600.jpg);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+}
+.triangle-bottomleft:before {
+    background-position: right 15px top;
+    background-size: 125px;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+}
+.triangle-bottomright:before {
+    background-position: right -125px top;
+    background-size: 250px;
+    background-repeat: no-repeat;
+}
+.dropzone {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    background: none !important;
+}
+.dz-message {
+    border: 2px dashed #000;
+    margin: 0 !important;
+}
+.expert {
+    z-index:5;
+    position:relative;
+}
+.row-fluid > .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+.dropContainer {
+    width: 100%;
+}
+.theoutputimage {
+    max-width: 200px !important;
+    height: auto !important;
+}
+#fileInput {
+    position: absolute;
+    right:0;
+    top:0;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity: 0;
+    cursor: pointer;
+}
+.topbottom,
+.leftright {
+    position:absolute;
+    right: 15px;
+    top: 0;
+    left: 15px;
+    bottom: 0;
+}
+.leftright:after {
+    content:'';
+    position:absolute;
+    bottom:0;
+    left:0;
+    top:0;
+    right:2px;
+    height:100%;
+    width:2px;
+    background-image: linear-gradient(to top, #4CA3F6 70%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 2px 15px;
+    background-repeat: repeat-y;
+    /*background-color:red;*/
+}
+.leftright:before {
+    content:'';
+    position:absolute;
+    bottom:0;
+    top:0;
+    right:0px;
+    height:100%;
+    width:2px;
+    background-image: linear-gradient(to top, #4CA3F6 70%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 2px 15px;
+    background-repeat: repeat-y;
+    /*background-color:red;*/
+}
+.topbottom:before {
+    content:'';
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    height:2px;
+    width:100%;
+    background-image: linear-gradient(to right, #4CA3F6 71%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 15px 2px;
+    background-repeat: repeat-x;
+    /* background-color:red; */
+}
+.topbottom:after {
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    height:2px;
+    width:100%;
+    background-image: linear-gradient(to right, #4CA3F6 71%, rgba(255, 255, 255, 0) 0%);
+    background-position: top;
+    background-size: 15px 2px;
+    background-repeat: repeat-x;
+    /* background-color:red; */
+}
+
+.is-invalid.leftright:after,
+.is-invalid.leftright:before {
+    background-image: linear-gradient(to top, #dc3545 70%, rgba(255, 255, 255, 0) 0%) !important;
+}
+.is-invalid.topbottom:after,
+.is-invalid.topbottom:before {
+    background-image: linear-gradient(to right, #dc3545 71%, rgba(255, 255, 255, 0) 0%) !important;
+}
+.error label {
+    color: #dc3545;
+}
+@media (min-width: 961px) {
+    .wrapper{
+        max-width: 960px;
+    }
+    .expert {
+        right: 0;
+        top: 0;
+    }
+}
+#accordion button,
+#accordion2 button,
+#accordion3 button {
+    line-height: 1.2;
+    font-size: 23px;
+}
+#accordion .card-header.collapsed,
+#accordion2 .card-header.collapsed,
+#accordion3 .card-header.collapsed{
+    background:#004e9e;
+}
+#accordion .card-header:not(.collapsed),
+#accordion2 .card-header:not(.collapsed),
+#accordion3 .card-header:not(.collapsed){
+    background:#950730;
+}
+.modal-dialog {
+      max-width: 1200px;
+      margin: 30px auto;
+  }
+
+
+
+.modal-body {
+  position:relative;
+  padding:0px;
+}
+.close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+}
+.videobox {
+    cursor: pointer;
+}
+.ytp-pause-overlay.ytp-scroll-min.ytp-scroll-max {
+    display: none;
+}
+.btn {
+    white-space: normal;
+}
+.card-header h5 button:before {
+   content: "▲";
+   float: right;
+   transition: all 0.5s;
+   transform: scale(1,.5);
+}
+.card-header.collapsed  h5 button:before {
+    -webkit-transform: rotate(180deg) scale(1,.5);
+    -moz-transform: rotate(180deg) scale(1,.5);
+    transform: rotate(180deg) scale(1,.5);
+}
+h4 {
+    color: #8C6845;
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 19pt;
+    text-transform: uppercase;
+}
+
+/*
+    ONETRUST Styling Overwrite
+*/
+#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-title {
+    color: #000000 !important;
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-description,
+#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-cookie-policy-group-desc,
+#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-table-header,
+#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a,
+#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy span,
+#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td {
+    color: #000000 !important;
+}
+
+#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-cookie-policy-group {
+    color: #000000 !important;
+    font-weight: 700;
+    font-size: 17px !important;
+    font-size: inherit;
+}
+
+button#ot-sdk-btn.ot-sdk-show-settings, button#ot-sdk-btn.ot-sdk-show-settings:hover {
+    /*
+    border-radius: 2px !important;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #85ba35 !important;
+    border: 2px solid #729500 !important;
+    color: #fff !important;
+    */
+}

@@ -1,0 +1,11 @@
+###############################################################################
+## PHP ERROR MESSAGES AND/OR LOGGING
+###############################################################################
+# PHP errors
+php_flag display_startup_errors off
+php_flag display_errors off
+php_flag html_errors off
+
+# PHP error logging
+php_flag  log_errors off
+#php_value error_log  /home/path/public_html/domain/PHP_errors.log

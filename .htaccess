@@ -1,0 +1,82 @@
+###############################################################################
+## AUTH
+###############################################################################
+#AuthUserFile /home/www/docs/changeme/docs/.htpasswd
+#AuthName "Preview"
+#AuthType Basic
+#require valid-user
+
+###############################################################################
+## Expiry Headers + content type override
+###############################################################################
+# 480 weeks
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf|htc)$">
+#Header set Cache-Control "max-age=290304000, public"
+Header set Cache-Control "max-age=1, public"
+</FilesMatch>
+
+<FilesMatch "\.(php)$">
+#Header set Cache-Control "max-age=120, public"
+Header set Cache-Control "max-age=1, public"
+#Header set Content-Type "application/xhtml+xml"    # IE doesn't understand true xhtml
+</FilesMatch>
+
+
+# compress text, html, javascript, css, xml:
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+
+###############################################################################
+## Add additional MIME-Types
+###############################################################################
+AddType text/x-component .htc
+AddType text/html .tpl
+
+###############################################################################
+## PHP ERROR MESSAGES AND/OR LOGGING
+###############################################################################
+# PHP errors
+php_flag display_startup_errors on
+php_flag display_errors on
+php_flag html_errors on
+
+# PHP error logging
+php_flag  log_errors on
+php_value error_log  /var/www/vhosts/leukotape/logs/error.log
+
+###############################################################################
+## Rewrite Rules
+###############################################################################
+RewriteEngine on
+RewriteBase /leukotape/
+
+# Folders
+RewriteCond $1 !(assets)
+RewriteCond $1 !(Tools)
+RewriteCond $1 !(files)
+RewriteCond $1 !(interface)
+RewriteCond $1 !(admin)
+RewriteCond $1 !(_Toolz)
+RewriteCond $1 !(acme)
+
+RewriteCond $1 !(img)
+RewriteCond $1 !(js)
+
+# Files
+RewriteCond $1 !(\.ico)
+RewriteCond $1 !(\.htc)
+RewriteCond $1 !(\.tpl)
+RewriteCond $1 !(robots\.txt)
+RewriteCond $1 !(style\.css)
+RewriteCond $1 !(Emailing\.html)
+RewriteCond $1 !(Landingpage\.html)
+
+RewriteCond $1 !(^$)
+RewriteRule (.*) index.php?g_rewrite=$1&g_rewriteparams=$2 [NC,QSA,L]
