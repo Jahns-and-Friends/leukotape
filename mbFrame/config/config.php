@@ -90,6 +90,7 @@ try {
                 $type = "preview-at";
                 $config['target_country'] = "at";
                 $config['target_language'] = "de";
+                $config['target_land'] = "at";
             } elseif (strrpos(parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH), "/de") !== false) {
                 $type = "preview-de";
                 $config['target_country'] = "de";
@@ -474,6 +475,11 @@ switch ($type)  {
     default: die("error in framework configuration: no type specified");
 }
 $config['type'] = $type;
+$config['languages'] = [
+    "de",
+    "fr",
+    "it"
+];
 if (strpos($type, 'dev') === 0) {
     $config['promotions'] = [
         "de"  => false,

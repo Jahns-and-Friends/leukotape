@@ -40,7 +40,16 @@ if (frame()->aConfig['type'] == "preview-de" || frame()->aConfig['type'] == "liv
     $blockEnable['showContent'] = false;
 }
 
-$replaceData['HTML_LANGUAGE_PARAMETER'] = frame()->aConfig['target_language']."_".strtoupper(frame()->aConfig['target_land']);
+$targetLanguage = frame()->aConfig['target_language'];
+$targetLand = frame()->aConfig['target_land'];
+if (isset($_GET['cl']) && !empty($_GET['cl'])) {
+    $switchLanguage = $_GET['cl'];
+    if (in_array($switchLanguage, frame()->aConfig['languages'])) {
+        $targetLanguage = $switchLanguage;
+    }
+}
+$replaceData['HTML_LANGUAGE_PARAMETER'] = $targetLanguage."_".strtoupper($targetLand);
+
 $replaceData['asset_base'] = frame()->aConfig['asset_base'];
 $replaceData['baseurl'] = frame()->aConfig['root']['web'] ;
 // always handy on copyright notice in footer
